@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes e Series</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">
+            Os melhores filmes e séries!
+        </h1>
+                <!--IMAGENS E LINKS-->       
+                <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+                <a href="https://alura.com.br/" target="_blank">
+                    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+                </a>
+                <div class="container">
+                  <p class="page-subtitle">
+                    Insira a imagem do seu filme ou a sua série favorita:
+                  </p>
+                  <div class="form-wrapper">
+                    <input type="text" id="nomeFilme" name="nomeFilme" placeholder="Insira o nome " value="">
+                    <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem" value=""></br></br>
+                    <button onClick="newFilme()">Adicionar Filme</button>
+                    <button onClick="deletFilme()">Remover Filme</button>
+                  </div>
+                  </div>
+                  <h2 id="msgError"></h2><br>
+                  <div id="listaFilmes"></div>
+        <!-- LINK DO JAVASCRIPT -->
+        <script src="script.js"></script>
+    </div> 
+</body>
+</html>
